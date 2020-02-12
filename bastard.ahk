@@ -14,32 +14,37 @@ SetTimer, ProductivityBastard, 30000
 return
 
 ProductivityBastard:
-    Loop {
-        IfWinExist, ahk_class MozillaWindowClass
-        {
-            WinClose ; use the window found above
-            continue
-        }
-        IfWinExist, ahk_class iTunes
-        {
-            WinClose
-            continue
-        }
-        IfWinExist, ahk_class Outlook Express Browser Class
-        {
-            WinClose
-            continue
-        }
-        IfWinExist, ahk_class Chrome_WidgetWin_1
-        {
-            WinClose
-            continue
-        }
-        IfWinExist, ahk_class SpotifyMainWindow
-        {
-            WinClose
-            continue
-        }
-        break
-        }
+	Loop {
+		If WinExist("ahk_class MozillaWindowClass") ;Firefox and Thunderbird
+		{
+			WinClose
+			continue
+		}
+		If WinExist("ahk_class iTunes")
+		{
+			WinClose
+			continue
+		}
+		If WinExist("ahk_class Outlook Express Browser Class") ;Windows Live Mail
+		{
+			WinClose
+			continue
+		}
+		If WinExist("ahk_class Chrome_WidgetWin_1") ;Google Chrome
+		{
+			WinClose
+			continue
+		}
+		If WinExist("ahk_class Chrome_WidgetWin_0") ;Spotify
+		{
+			WinClose
+			continue
+		}
+		If WinExist("ahk_class MediaPlayerClassicW") ;MPC-HC
+		{
+			WinClose
+			continue
+		}
+		break
+		}
 return

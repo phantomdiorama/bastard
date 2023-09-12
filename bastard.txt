@@ -1,2 +1,2 @@
 notepad.exe
-notepad++.exe
+firefox.exe

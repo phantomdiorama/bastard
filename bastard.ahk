@@ -1,19 +1,15 @@
-﻿#NoEnv
-#Warn
-SendMode Input
-SetWorkingDir %A_ScriptDir%
-#Persistent
+﻿#Requires AutoHotkey v2.0
+
 if FileExist("icon.ico")
-    Menu, Tray, Icon, icon.ico
+    TraySetIcon  "icon.ico"
 
-SetTimer, YoBastard, 30000
-return 
+SetTimer YoBastard, 30000
 
-YoBastard:
-Loop, read, %A_ScriptDir%\bastard.txt
+YoBastard()
 {
-    ;Msgbox, %A_LoopReadLine%
-    if WinExist("ahk_exe " A_LoopReadLine)
+    Loop read, "bastard.txt"
+    {
+        if WinExist("ahk_exe " A_LoopReadLine)
         WinClose
+    }
 }
-return 

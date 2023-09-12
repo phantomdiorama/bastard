@@ -4,13 +4,13 @@
 
 ## what
 
-Bastard is a productivity helper / distraction killer written in AutoHotkey (v1.1). It takes a list of executables, checks if they exist (on a 30 second loop), and then closes them.
+Bastard is a productivity helper / distraction killer written in AutoHotkey v2. It takes a list of executables, checks if they exist (on a 30 second loop), and then closes them.
 
-It’s in daily use but consider it *alpha* quality.
+**Note:** if you have to use AutoHotkey v1 go [here](https://github.com/phantomdiorama/bastard/releases)
 
 ## how
 
-Create file `bastard.txt` in the same folder as the script and add a list of executables, one per line eg:
+Add a list of executables to `bastard.txt`, one per line eg:
 
 ```
 notepad.exe
@@ -20,6 +20,10 @@ distracting_thing.exe
 
 Then run `bastard.ahk`
 
+## customisation
+
+For a different tray icon add a file called `icon.ico` to Bastard folder.
+
 ## to do
 
-Refactor for AutoHotkey v2
+~~Refactor for AutoHotkey v2~~

@@ -4,9 +4,12 @@
 
 ## what
 
-Bastard is a productivity helper / distraction killer written in AutoHotkey v2. It takes a list of executables, checks if they exist (on a 30 second loop), and then closes them.
+Bastard is a productivity helper / distraction killer written in AutoHotkey v2.
+It takes a list of executables, checks if they exist (on a 30 second loop), and
+then closes them.
 
-**Note:** if you have to use AutoHotkey v1 go [here](https://github.com/phantomdiorama/bastard/releases)
+**Note:** if you have to use AutoHotkey v1 go
+[here](https://github.com/phantomdiorama/bastard/releases)
 
 ## how
 
